@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -31,7 +31,7 @@
     					data-vertical="\n--\n">
 					<textarea data-template>
 
-						# REVEAL.js と github でらくらくスライド生活
+						## reveal.js と github で<br>らくらくスライド生活
 
 						---
 
@@ -47,7 +47,7 @@
 
 						---
 
-						キライ
+						キライ &#x1f4a9;
 
 						---
 
@@ -76,7 +76,86 @@
 
 						---
 
+						## 作り方
 
+						- GitHubから[reveal.js](https://github.com/hakimel/reveal.js/)のプロジェクトzipをダウンロード
+						- index.htmlをテキストエディタで開く
+						- `<div class="slides">` タグ内の `<section>` 内容を削除
+						- 後述のオプション付き `<section>` を記載する
+						- `<section>` 内にMarkdownでスライドの内容を書く
+
+						---
+
+						## section の書き方
+
+						```
+						<section data-markdown
+							    data-separator="\n---\n$"
+							    data-vertical="\n--\n">
+							<script type="text/template">
+								ここにmarkdownを記載していく。
+							</script>
+						</section>
+						```
+
+						- `data-separator="\n---\n$"` で `---` でスライド区切り
+						- `data-vertical="\n--\n$"`   で `--` で縦スライド区切り
+
+						---
+
+						スライドができたら
+
+						---
+
+						## Github へ
+
+						---
+
+						公開したくないなら会社の GHE でも OK!
+
+						---
+
+						## リポジトリの設定
+
+						---
+
+						リポジトリの設定（Settings）から
+						<img src="img/repo-top.png">
+
+						---
+
+						ソースのブランチを選択して保存
+
+						<img src="img/enable-github-pages.png">
+
+						---
+
+						公開ページへアクセスするだけ
+
+						---
+
+						今見てるのがそうです！
+
+						---
+
+						簡単でしょ！
+
+						---
+
+						qiita のスライドよりはちゃんとしたのを作りたい時にぴったり
+
+						---
+
+						インターネットでどこからでもアクセス
+
+						---
+
+						reveal 自体ももっと高機能なので試してみてね  
+						Github の README に色々書いてあります。
+
+						---
+
+						bye bye &#x1f618;
 
 					</textarea>
 				</section>
